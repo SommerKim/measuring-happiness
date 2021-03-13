@@ -10,7 +10,7 @@ Kim Sommer<br>
 Suicide Rates Overview 1985-2016<br>
 World Happiness Report to 2020<br>
 
-## Transformation
+## ETL
 <ol>
   <li>Keep only data from common years (2015-2016)</li>
   <li>Clean data to remove unnecessary columns</li>
