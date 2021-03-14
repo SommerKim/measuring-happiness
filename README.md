@@ -1,5 +1,5 @@
 # Comparing World Happiness Levels to Suicide Rates<br>
-Using the World Happiness Report as our starting point, we will compare happiness levels first with suicide rates per country, <br>
+Using the World Happiness Report as our starting point, we will compare happiness levels first with suicide rates per country,
 then with Gross National Income per capita.
 
 ## Project Team <br>
