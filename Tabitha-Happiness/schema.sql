@@ -23,7 +23,22 @@ CREATE TABLE suicide (
 	population INT
 );
 
-SELECT * FROM suicide;
+SELECT * FROM suicide, happiness;
+
+SELECT
+	country,
+	gdp_for_year,
+	suicides_no,
+	population,
+	happiness,
+	happiness_score,
+	life_expectancy,
+	freedom,
+	generosity,
+	dystopia_residual
+FROM
+	happiness
+INNER JOIN suicide USING(country);
 
 -- human development table
 
