@@ -15,5 +15,16 @@ SELECT * FROM happiness;
 
 -- suicide table
 
+CREATE TABLE suicide (
+	country TEXT PRIMARY KEY,
+	gdp_for_year VARCHAR,
+	gdp_per_capita INT,
+	suicides_no INT,
+	population INT
+);
+
+SELECT * FROM suicide;
 
 -- human development table
+
+
