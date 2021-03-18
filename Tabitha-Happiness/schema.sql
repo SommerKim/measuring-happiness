@@ -69,4 +69,5 @@ FROM
 INNER JOIN suicide 
     ON suicide.country = happiness.country
 INNER JOIN human_development 
-    ON suicide.country = human_development.country;
+    ON suicide.country = human_development.country
+ORDER BY country;
