@@ -23,23 +23,50 @@ CREATE TABLE suicide (
 	population INT
 );
 
-SELECT * FROM suicide, happiness;
-
-SELECT
-	country,
-	gdp_for_year,
-	suicides_no,
-	population,
-	happiness,
-	happiness_score,
-	life_expectancy,
-	freedom,
-	generosity,
-	dystopia_residual
-FROM
-	happiness
-INNER JOIN suicide USING(country);
+SELECT * FROM suicide;
 
 -- human development table
 
+CREATE TABLE human_development (
+	country VARCHAR PRIMARY KEY,
+	hdi_rank INT,
+	hdi INT,
+	life_expectancy INT,
+	expected_yrs_education INT,
+	mean_yrs_edu INT,
+	gni_per_capita VARCHAR,
+	gni_per_capita_minus_hdi INT
+);
 
+SELECT * FROM human_development;
+
+-- joining tables together
+
+SELECT * FROM happiness, suicide, human_development;
+
+SELECT
+	happiness.country,
+	happiness.happiness,
+	happiness.happiness_score,
+	happiness.gdp_per_capita,
+	happiness.life_expectancy,
+	happiness.freedom,
+	happiness.generosity,
+	happiness.dystopia_residual,
+	suicide.gdp_for_year,
+	suicide.gdp_per_capita,
+	suicide.suicides_no,
+	suicide.population,
+	human_development.hdi_rank,
+	human_development.hdi,
+	human_development.life_expectancy,
+	human_development.expected_yrs_education,
+	human_development.mean_yrs_edu,
+	human_development.gni_per_capita,
+	human_development.gni_per_capita_minus_hdi
+FROM
+	happiness
+INNER JOIN suicide 
+    ON suicide.country = happiness.country
+INNER JOIN human_development 
+    ON suicide.country = human_development.country;
