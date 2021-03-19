@@ -16,12 +16,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="d-flex">
             <a class="navbar-brand" href="#">Measuring Happiness</a>
+        </div>
             <button type="button" class="navbar-toggler collapsed ml-auto" data-toggle="collapse" role="button" aria-pressed="false" data-target="#menu_items">
                 <div class="hamburger"></div>
                 <div class="hamburger"></div>
                 <div class="hamburger"></div>
             </button>
-        </div>
         <div class="collapse navbar-collapse flex-grow-1" id="menu_items">
             <ul class="navbar-nav ml-auto flex-nowrap">
                 <li class="nav-item dropdown">
@@ -46,58 +46,81 @@
 
     <main role="main">
         <img class="header-image" src="Images/happy_people2.jpg"/>
-            <!-- <div class="container">
-                <h1 class="headline">Measuring Happiness</h1>
-                <p class="sub-head">How do happiness levels compare to suicide levels and economic factors?</p>
-                <hr>
-                <p>"Here is some placeholder text wherein we describe the data presented in this website. Below will be a 
-                    button linking to our project report.</p>
-                <p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Project Report</a>
-                </p>
-            </div> -->
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4">
-                    <div class="row">
+
+        <div class="flex-grow-1" style="padding: 2rem;">
+            <div class="row" style="width: 100%; justify-content: center;">
+                <div class="col-lg-12">
+                    <div class="row" style="height: 100%">
                         <div class="col box">
-                            <img src="Images/aqua.jpeg"/>
                             <h2>Project Report Title</h2>
                             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, 
                                 tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem 
                                 malesuada magna mollis euismod. Donec sed odio dui. </p>
                             <p>
-                                <a class="btn btn-primary btn-sm" href="#" role="button">Project Report</a>
-                            </p>
-                
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="row">
-                        <div class="col box">
-                            <img src="Images/aqua.jpeg"/>
-                            <h2>Happiness vs. Suicide Rates</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, 
-                                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem 
-                                malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p>
-                                <a class="btn btn-primary btn-sm" href="#" role="button">View Table</a>
+                                <a class="btn btn-primary btn-sm" href="./report.html" role="button">Project Report</a>
                             </p>    
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="row">
+            </div>
+            <div class="row" style="width:100%; justify-content: center;">
+                <div class="col-lg-6" style="margin-top: 1rem;">
+                    <div class="row" style="height: 100%">
                         <div class="col box">
-                            <img src="Images/aqua.jpeg"/>
-                            <h2>Happiness vs. Economic Factors</h2>
+                            <a class="header" href="./happiness_data.html"><h2>The World Happiness Index 2015</h2></a>
+                            <img src="Images/aqua.jpeg" class="summary-image"/>
+
                             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, 
                                 tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem 
                                 malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p>
+                            <!-- <p>
                                 <a class="btn btn-primary btn-sm" href="#" role="button">View Table</a>
-                            </p>
+                            </p>     -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" style="margin-top: 1rem;">
+                    <div class="row" style="height: 100%">
+                        <div class="col box">
+                            <!-- <img src="Images/aqua.jpeg"/> -->
+                            <a class="header" href="./suicide_rates.html"><h2>Suicide Rates 2015</h2></a>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, 
+                                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem 
+                                malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <!-- <p>
+                                <a class="btn btn-primary btn-sm" href="#" role="button">View Table</a>
+                            </p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style=width:100%; justify-content: center;">
+                <div class="col-lg-6" style="margin-top: 1rem;">
+                    <div class="row" style="height: 100%">
+                        <div class="col box">
+                            <!-- <img src="Images/aqua.jpeg"/> -->
+                            <a class="header" href="./gni_data.html"><h2>Gross National Income Data</h2></a>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, 
+                                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem 
+                                malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <!-- <p>
+                                <a class="btn btn-primary btn-sm" href="#" role="button">View Table</a>
+                            </p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" style="margin-top: 1rem;">
+                    <div class="row" style="height: 100%">
+                        <div class="col box">
+                            <!-- <img src="Images/aqua.jpeg"/> -->
+                            <a class="header" href="./data_comparison.html"><h2>Data Comparisons</h2></a>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, 
+                                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem 
+                                malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <!-- <p>
+                                <a class="btn btn-primary btn-sm" href="#" role="button">View Table</a>
+                            </p> -->
+                
                         </div>
                     </div>
                 </div>

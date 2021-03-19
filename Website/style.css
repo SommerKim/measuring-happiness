@@ -31,7 +31,7 @@
 
 .navbar-brand {
     font-family: 'Oleo Script', cursive;
-    font-size: 3rem;
+    font-size: calc(1em + 1vw)
 }
 
 hr {
@@ -52,16 +52,22 @@ body {
 }
 
 body {
-    font-size: 1rem;
+    font-size: 1em;
     font-family: Montserrat, sans-serif;
     line-height: 150%;
     color: #000000;
-    padding-top: 45px;
+    padding-top: 3rem;
     background-color: #5e5e5e;
 }
 
 .header-image {
     margin-bottom: 25px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 600;
+    color: teal;
 }
 
 h2 {
@@ -110,4 +116,30 @@ color: #FEFEFE;
 
 img {
     max-width: 100%;
+}
+
+.summary-image {
+    margin: 10px;
+    margin-right: 10px;
+    height: 9rem;
+    float: left;
+}
+
+.embed-responsive-item {
+    width: 100%;
+    min-height: 800px;
+}
+
+.header {
+    color: #000000;
+}
+
+a:hover {
+    color: teal;
+}
+
+span {
+    width: 0;
+    height: 2rem;
+    margin: 2rem;
 }
