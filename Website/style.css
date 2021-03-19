@@ -1,0 +1,145 @@
+/* @media (max-width: 992px) {
+    .dropdown-item,
+    .nav-link {
+    font-family: Montserrat, sans-serif;
+    font-size: 15px !important;
+    color: #FEFEFE !important;
+    font-weight: 800;
+    }
+    .dropdown-menu.show {
+        background-color: #00CADE !important;
+    }
+} */
+
+.fixed-top {
+    position: fixed;
+    height: 3.5rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.bg-dark {
+    background-color: teal !important;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar-brand {
+    font-family: 'Oleo Script', cursive;
+    font-size: calc(1em + 1vw)
+}
+
+hr {
+    background-color: #FEFEFE;
+    font-family: Montserrat, sans-serif;
+}
+
+.hamburger {
+    width: 25px;
+    height: 5px;
+    background-color: #FEFEFE;
+    margin: 3px 0;
+}
+
+html, 
+body {
+    min-height: 100%;
+}
+
+body {
+    font-size: 1em;
+    font-family: Montserrat, sans-serif;
+    line-height: 150%;
+    color: #000000;
+    padding-top: 3rem;
+    background-color: #5e5e5e;
+}
+
+.header-image {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 600;
+    color: teal;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.footer {
+    background-color: teal;
+    text-align: center;
+}
+
+.foot-text {
+    color: #FEFEFE;
+    font-family: Montserrat, sans-serif;
+} 
+
+.headline {
+color: #FEFEFE;
+}
+
+.sub-head {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #FEFEFE;
+}
+
+.box {
+    /* height: 300px; */
+    margin: 10px;
+    padding: 10px;
+    font-size: 13px;
+    background-color: #FEFEFE;
+    height: 100%;
+}
+
+/* .caption-box {
+    line-height: 1.25;
+    padding: 5px;
+    font-size: 13px;
+    background-color: #FEFEFE;
+    opacity: 70%;
+    max-width: 100%;
+    max-height: auto;
+} */
+
+img {
+    max-width: 100%;
+}
+
+.summary-image {
+    margin: 10px;
+    margin-right: 10px;
+    height: 9rem;
+    float: left;
+}
+
+.embed-responsive-item {
+    width: 100%;
+    min-height: 800px;
+}
+
+.header {
+    color: #000000;
+}
+
+a:hover {
+    color: teal;
+}
+
+span {
+    width: 0;
+    height: 2rem;
+    margin: 2rem;
+}
