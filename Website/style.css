@@ -20,6 +20,7 @@
     }
 }
 
+/* Navbar styling */
 .navbar-toggler {
     display: none;
 }
@@ -56,11 +57,6 @@
     font-size: calc(1em + 1vw)
 }
 
-hr {
-    background-color: #FEFEFE;
-    font-family: Montserrat, sans-serif;
-}
-
 .hamburger {
     width: 25px;
     height: 5px;
@@ -68,6 +64,8 @@ hr {
     margin: 3px 0;
 }
 
+
+/* Main body styling */
 html, 
 body {
     min-height: 100%;
@@ -82,29 +80,34 @@ body {
     background-color: #FEFEFE;
 }
 
-.header-image {
-    margin-bottom: 25px;
-    width: 100%;
-}
-
-h2 {
-    font-weight: 600;
-}
-
 .teal {
     background-color: teal;
     height: 1px;
 }
 
-.footer {
-    background-color: teal;
-    text-align: center;
+
+/* Images styling */
+.header-image {
+    margin-bottom: 25px;
+    width: 100%;
 }
 
-.foot-text {
-    color: #FEFEFE;
-    font-family: Montserrat, sans-serif;
-} 
+img {
+    max-width: 100%;
+}
+
+.summary-image {
+    margin-right: 10px;
+    max-height: 8rem;
+    /* width: 30%; */
+    float: left;
+}
+
+
+/* Text styling */
+h2 {
+    font-weight: 600;
+}
 
 .headline {
 color: #FEFEFE;
@@ -117,16 +120,8 @@ color: #FEFEFE;
     color: #FEFEFE;
 }
 
-.box {
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 13px;
-    background-color: #FEFEFE;
-    height: 100%;
-}
-
-img {
-    max-width: 100%;
+.header {
+    color: #000000;
 }
 
 .featured-summary {
@@ -139,19 +134,39 @@ img {
     line-height: 150%;
 }
 
-.summary-image {
-    /* margin: 10px; */
-    margin-right: 10px;
-    /* height: 9rem; */
-    width: 30%;
-    float: left;
+
+/* Footer styling */
+.footer {
+    background-color: teal;
+    text-align: center;
+}
+
+.foot-text {
+    color: #FEFEFE;
+    font-family: Montserrat, sans-serif;
+} 
+
+
+/* Misc Style Elements */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 13px;
+    background-color: #FEFEFE;
+    height: 100%;
+}
+
+.report-box {
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 13px;
+    background-color: #FEFEFE;
+    border: 1px solid #5e5e5e;
+    height: 100%;
 }
 
 .embed-responsive-item {
     width: 100%;
     min-height: 800px;
-}
-
-.header {
-    color: #000000;
 }

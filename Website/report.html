@@ -44,7 +44,119 @@
         </div>
     </nav>
 
-
+    <main>
+        <div class="container report-box">
+            <h4>
+                Extract
+            </h4>
+            <hr>
+            <h5>
+                Kaggle Datasets
+            </h5>
+            <br>
+            <ol>
+                <li>
+                    Suicide Rates Overview 1985 - 2016
+                </li>
+                <li>
+                    World Happiness Report to 2020
+                </li>
+                <li>    
+                    Human Development DB (GNI by country)
+                </li>
+            </ol>
+            <br>
+            <h4>
+                Transform
+            </h4>
+            <hr>
+            <h5>
+                Happiness Index Dataset
+            </h5>
+            <ol>
+                <li>
+                    Rounded the columns by 3 decimal places to clean the overall format of the DataFrame
+                </li>
+                <li>
+                    Removed unnecessary columns from the DataFrame
+                </li>
+                <li>
+                    Renamed columns to easily transfer to database later
+                </li>
+                <li>
+                    Dropped duplicates in the country column
+                </li>
+                <li>
+                    Dropped duplicates in the country column
+                </li>
+                <li>
+                    Made country column an index to easily load DataFrame into database
+                </li>
+            </ol>
+            <br>
+            <h5>
+                Suicide Rates Dataset
+            </h5>
+            <ol>
+                <li>
+                    Dropped all data but that from 2015
+                </li>
+                <li>
+                    Discovered hidden spaces in column names; renamed columns 
+                </li>
+                <li>
+                    Dropped columns for year, sex, age, and suicides/100k to only include data relevant to the country-level view
+                </li>
+                <li>
+                    Grouped by country, gdp_for_year and gdp_per_capita in order to get the sum of population and suicides per country
+                </li>
+                <li>
+                    Reset index, then set index to country for loading into database
+                </li>
+            </ol>
+            <br>
+            <h5>
+                HDI Dataset
+            </h5>
+            <ol>
+                <li>
+                    Removed unnecessary columns from the DataFrame
+                </li>
+                <li>
+                    Renamed columns to easily transfer to database later
+                </li>
+                <li>
+                    Dropped regions from the dataset in the country column
+                </li>
+                <li>
+                    Made country column an index to easily load DataFrame into database  
+                </li>
+            </ol>
+            <br>
+            <h4>
+                Load
+            </h4>
+            <hr>
+            <ol>
+                <li>
+                    Used pgAdmin to load the final database
+                </li>
+                <li>
+                    Created a happiness, suicide, and human_development table
+                </li>
+                <li>
+                    Joined the 3 tables on country and compared happiness core to suicide number and gross national income per capita
+                </li>
+            </ol>
+        </div>
+        <div class="container report-box">
+            <h4>
+                ERD
+            </h4>
+            <hr>
+            <img src="Images/Suicide Data Model.png"/>
+        </div>
+    </main>
 
     <footer class="footer fixed-bottom">
         <div class="container">
